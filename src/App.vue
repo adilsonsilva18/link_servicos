@@ -14,8 +14,12 @@ export default {
       servicos: null
     }
   },
+
+  //https://raw.githubusercontent.com/adilsonsilva18/link_servicos/main/src/Dados/Services.json
+  //https://raw.githubusercontent.com/yurimarcon/link-services/main/src/Dados/Services.json
+
   mounted(){
-    let target = "https://github.com/adilsonsilva18/link_servicos/blob/main/src/Dados/Services.json";
+    let target = "https://raw.githubusercontent.com/adilsonsilva18/link_servicos/main/src/Dados/Services.json";
     fetch(target)
       .then(res => res.json())
       .then(res => this.servicos = res)
